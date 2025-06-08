@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" />
+  <title>Folder Organizer</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; margin-top: 5em; }
+    input { width: 360px; padding: 0.5em; }
+    button { padding: 0.5em 1em; margin-left: 0.5em; }
+    .msg { margin-top: 1em; color: #444; }
+  </style>
+</head>
+<body>
+  <h2>📁 Folder Organizer</h2>
+  <form th:action="@{/organize}" method="post">
+    <input type="text"
+           name="folderPath"
+           th:value="${enteredPath}"
+           placeholder="Enter full folder path…"
+           required />
+    <button type="submit">Organize</button>
+  </form>
+  <div class="msg" th:text="${message}"></div>
+</body>
+</html>
+l>

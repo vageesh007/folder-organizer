@@ -1,0 +1,76 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="
+           http://maven.apache.org/POM/4.0.0
+           http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.example</groupId>
+  <artifactId>folder-organizer</artifactId>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
+
+  <!-- Inherit defaults from Spring Boot -->
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>3.1.4</version>
+    <relativePath/> <!-- lookup parent from Maven central -->
+  </parent>
+
+  <properties>
+    <!-- Use Java 17 features and compile to 17 -->
+    <java.version>17</java.version>
+    <!-- Optional: control Thymeleaf cache during development -->
+    <spring.thymeleaf.cache>false</spring.thymeleaf.cache>
+  </properties>
+
+  <dependencies>
+    <!-- Spring MVC & embedded Tomcat -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+    <!-- Thymeleaf templating engine -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-thymeleaf</artifactId>
+    </dependency>
+
+    <!-- Bind @ConfigurationProperties from application.properties -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-configuration-processor</artifactId>
+      <optional>true</optional>
+    </dependency>
+
+    <!-- (Optional) for unit testing -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <!-- Spring Boot plugin: packages your app as an executable jar -->
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+
+      <!-- Ensure Maven compiles to Java 17 bytecode -->
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.10.1</version>
+        <configuration>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
