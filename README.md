@@ -8,8 +8,10 @@
 ![Platform](https://img.shields.io/badge/Platform-Browser%20%7C%20Server-lightgrey)
 
 # 🖼️ Preview
-![Image](https://github.com/user-attachments/assets/23f04744-9e99-45e0-9d7b-8f1eaaa490e3)
+
 ![Image](https://github.com/user-attachments/assets/acd76b1b-0353-4845-90a7-e05b873585fb)
+# 
+![Image](https://github.com/user-attachments/assets/23f04744-9e99-45e0-9d7b-8f1eaaa490e3)
 
 # 🚀 Features
 
@@ -65,7 +67,7 @@ http://localhost:8080
 ```
 
 # 📁 Project Structure
-📁 folder-organizer-web/
+```bash 📁 folder-organizer-web/
 ├── src/
 │ ├── main/
 │ │ ├── java/com/vageesh/organizerweb/
@@ -78,7 +80,7 @@ http://localhost:8080
 │ │ └── application.properties
 ├── pom.xml
 └── README.md
-
+```
 # 📜 License
 This project is licensed under the MIT License.
 
