@@ -1,6 +1,6 @@
 # 🌐 Folder Organizer Web
 
-> A modern web-based file organizer built with Java Spring Boot. Organize your uploaded files into neat folders with smart categorization. Built by [Vageesh Singh](https://github.com/vageesh-singh).
+> A modern web-based file organizer built with Java Spring Boot. Organize your uploaded files into neat folders with smart categorization. Built by [Vageesh Kumar Singh](https://github.com/vageesh007)
 
 ![Java Version](https://img.shields.io/badge/Java-17-orange?logo=java)
 ![Spring Boot](https://img.shields.io/badge/Spring--Boot-3.x-brightgreen?logo=springboot)
